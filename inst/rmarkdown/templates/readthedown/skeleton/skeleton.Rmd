@@ -1,25 +1,39 @@
 ---
-title: ""
-date: "`r Sys.Date()`"
+title: "CAA Primary R Markdown Template"
+author: "Rank First Last"
+date: "Date of Presentation"
+logo_path: "caa_seal.png"
 output:
   rmdformats::readthedown:
     highlight: kate
 ---
 
-
-```{r setup, include=FALSE}
+```{r knitr_init, echo=FALSE, cache=FALSE, message = F, warning=F}
+## Global otions
 library(knitr)
-library(rmdformats)
-
-## Global options
 options(max.print="75")
 opts_chunk$set(echo=FALSE,
-	             cache=TRUE,
+	             cache=FALSE,
                prompt=FALSE,
-               tidy=TRUE,
+               tidy=FALSE,
                comment=NA,
                message=FALSE,
                warning=FALSE)
 opts_knit$set(width=75)
 ```
 
+**Disclaimer:** The appearance of U.S. Department of Defense (DoD) visual information does not imply or constitute DoD endorsement. The views expressed in this presentation are those only of the author and do not represent the official position of the U.S. Army, DoD, or the federal government.
+
+<center>
+![](caa_seal.png){width=10%}
+</center>
+
+# header 1
+
+## Add your first header
+
+# hearder 2
+
+## sub 1
+
+## sub 2
